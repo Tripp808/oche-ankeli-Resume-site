@@ -1,0 +1,518 @@
+/* Default styles for larger screens */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive styles for smaller screens (e.g., tablets and mobile devices) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Navigation Bar */
+  #home {
+    padding: 10px;
+  }
+
+  .topmenu {
+    font-size: 18px;
+  }
+
+  .topdiv {
+    padding: 20px;
+  }
+
+  .profile_name {
+    font-size: 20px;
+  }
+
+  /* About Me */
+  .about-me-content .profile_image {
+    max-width: 40%;
+  }
+
+  .about-me-content h1 {
+    font-size: 30px;
+  }
+
+  .about-me-content p {
+    font-size: 16px;
+  }
+
+  /* Skills */
+  .skill {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .skills p {
+    font-size: 14px;
+  }
+
+  /* Projects */
+  .project-card h3 {
+    font-size: 18px;
+  }
+
+  .project-card li {
+    font-size: 16px;
+  }
+
+  /* Recommendations */
+  .recommendation {
+    font-size: 16px;
+  }
+
+  .recommendation span {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  .contact-details h3 {
+    font-size: 16px;
+  }
+
+  .contact-details p {
+    font-size: 14px;
+  }
+
+  /* "Download Resume" button */
+  #download-cv {
+    padding: 12px 40px;
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+/* Navigation Bar */
+#home {
+  background-color: #7600bc;
+  padding: 10px;
+  text-align: center;
+}
+
+.topmenu {
+  color: lightgray;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.topmenu:hover {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.topdiv {
+  text-align: right;
+  padding: 20px;
+}
+
+.profile_name {
+  float: left;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+.profile_name .contact_info {
+  font-size: 10px;
+  font-weight: 100;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 2%;
+}
+
+.contact_info img {
+  width: 25px;
+  margin-right: 10px;
+  float: left;
+}
+
+/* Titles */
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #7600bc;
+  margin: 20px;
+}
+
+.introduction {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  animation-duration: 5s;
+  position: relative;
+}
+
+/* About Me */
+
+.about-me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+}
+
+.about-me-content {
+  background-image: url("https://cutewallpaper.org/21/galaxy-background-gif/Best-4-K-Free-Background-GIFs-Gfycat.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.about-me-content .profile_image {
+  max-width: 20%; /* Adjust the profile image size for larger screens */
+}
+.about-me-content .profile_image {
+  max-width: 26%;
+  display: block;
+  height: auto;
+  margin: 2% auto;
+  border: 8px solid #850424;
+  border-radius: 50%;
+}
+
+.about-me-content h1 {
+  font-size: 40px;
+  margin-top: 10px;
+  color: #7600bc;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.about-me-content p {
+  font-size: 20px;
+  line-height: 2;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+/* Skills */
+.all_skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  border: 1px solid gray;
+  border-radius: 6px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  width: 45%;
+  font-size: 18px;
+  box-shadow: 0 3px 10px gray;
+}
+
+.skill img {
+  height: 25px;
+}
+
+.skills h6 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.skills p {
+  font-size: 15px;
+  color: gray;
+  margin: 5px;
+}
+
+/* Projects */
+.projects-container {
+  margin: 20px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+}
+
+.project-card {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.project-card h3 {
+  font-size: 20px;
+}
+
+.project-card li {
+  font-size: 18px;
+}
+
+/* Recommendations */
+.all_recommendations {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: center;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  margin: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+}
+
+.recommendation span {
+  color: #7600bc;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Scroll to Top Button */
+.iconbutton {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #7600bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+/* Form Pop-up */
+.popup {
+  width: 90%;
+  max-width: 400px;
+  background-color: #e8bcf0;
+  border-radius: 3mm;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: fixed;
+  visibility: hidden;
+}
+
+.popup img {
+  padding-top: 20px;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  font-size: 18px;
+  margin: 10px auto;
+  display: block;
+}
+
+.popup button:hover {
+  background-color: #7600bc;
+  border: 1px solid #7600bc;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Recommendation Form */
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+fieldset {
+  padding: 15px;
+  border: thin solid white;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+/* Buttons */
+button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  font-size: 18px;
+  margin: 10px auto;
+  display: block;
+}
+
+button:hover {
+  background-color: #7600bc;
+  border: 1px solid #7600bc;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 10px;
+}
+
+/* Change icon color on hover */
+.social-icons a:hover {
+  color: #0077b5; /* LinkedIn color */
+}
+
+footer {
+  background-color: #2e1010;
+  color: #fff;
+  padding: 2px;
+}
+
+.contact-details {
+  text-align: center;
+}
+
+.contact-details h3 {
+  font-size: 20px;
+}
+
+.contact-details p {
+  font-size: 15px;
+  margin: 5px;
+}
+
+#download {
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+#download-cv {
+  background-color: white;
+  color: purple;
+  padding: 18px 50px;
+  width: 80%;
+  border-radius: 10%;
+  border: 2px solid purple;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#download-cv:hover {
+  background-color: purple;
+  color: white;
+}
+
+/* Responsive styles for smaller screens (e.g., tablets and mobile devices) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Adjust navigation bar for smaller screens */
+  #home {
+    padding: 10px;
+  }
+  .topmenu {
+    font-size: 18px;
+  }
+  .topdiv {
+    padding: 20px;
+  }
+  .profile_name {
+    font-size: 20px;
+  }
+
+  /* Adjust profile image in About Me section */
+  .about-me-content .profile_image {
+    max-width: 40%;
+  }
+  .about-me-content h1 {
+    font-size: 30px;
+  }
+  .about-me-content p {
+    font-size: 16px;
+  }
+
+  /* Adjust skill cards for smaller screens */
+  .skill {
+    width: 90%;
+    font-size: 16px;
+  }
+  .skills p {
+    font-size: 14px;
+  }
+
+  /* Adjust project cards for smaller screens */
+  .project-card h3 {
+    font-size: 18px;
+  }
+  .project-card li {
+    font-size: 16px;
+  }
+
+  /* Adjust recommendation cards for smaller screens */
+  .recommendation {
+    font-size: 16px;
+  }
+  .recommendation span {
+    font-size: 18px;
+  }
+
+  /* Adjust the footer for smaller screens */
+  .contact-details h3 {
+    font-size: 16px;
+  }
+  .contact-details p {
+    font-size: 14px;
+  }
+
+  /* Adjust the "Download Resume" button for smaller screens */
+  #download-cv {
+    padding: 12px 40px;
+    font-size: 16px;
+  }
+}
