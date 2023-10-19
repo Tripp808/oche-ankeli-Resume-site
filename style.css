@@ -516,3 +516,21 @@ footer {
     font-size: 16px;
   }
 }
+
+
+/* nav styles for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .topmenu {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  .profile_name {
+    font-size: 15px;
+  }
+
+  .contact_info {
+    font-size: 14px;
+  }
+}
+
